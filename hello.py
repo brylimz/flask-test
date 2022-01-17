@@ -65,7 +65,7 @@ def delay_decorator(function):
         time.sleep(2)
         # do something before
         function()
-        function()
+
         # do something after
     return wrapper_function
 
@@ -77,5 +77,5 @@ def say_hello():
 
 say_hello()
 
-decorated_function = delay_decorator(say_hello)
-decorated_function()
+# decorated_function = delay_decorator(say_hello)
+# decorated_function()
